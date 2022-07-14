@@ -1,9 +1,30 @@
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<style>
+  img {
+    padding-bottom: 0px;
+    display: block;
+    position: absolute;
+  }
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  @font-face {
+    font-family: "league-spartan.bold";
+    src: url('../assets/fonts/league-spartan.bold.ttf');
+    font-weight: 500;
+  }
+
+  #text {
+    z-index: 100;
+    position: absolute;
+    font-family: 'league-spartan.bold', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    top: 10px;
+    left: 25px;
+  }
+
+</style>
+
+<ion-content [fullscreen]="true">
+  <app-header></app-header>
+  <p id="text">LIKES AND DISLIKES</p>
 </ion-content>
