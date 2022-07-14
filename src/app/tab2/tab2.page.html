@@ -22,9 +22,36 @@
     left: 25px;
   }
 
+  ion-card {
+    z-index: 100;
+    position: absolute;
+    top: 150px;
+  }
+
 </style>
 
 <ion-content [fullscreen]="true">
   <app-header></app-header>
-  <p id="text">LIKES AND DISLIKES</p>
+  <p id="text">LIKES & DISLIKES</p>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>LIKES</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>DISLIKES</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
