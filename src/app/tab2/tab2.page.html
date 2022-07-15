@@ -11,6 +11,11 @@
     font-weight: 500;
   }
 
+  @font-face {
+    font-family: "glacial-indifference.regular";
+    src: url('../assets/fonts/glacial-indifference.regular.otf');
+  }
+
   #text {
     z-index: 100;
     position: absolute;
@@ -22,10 +27,35 @@
     left: 25px;
   }
 
-  ion-card {
+  #likes {
     z-index: 100;
     position: absolute;
     top: 150px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  #dislikes {
+    z-index: 100;
+    position: absolute;
+    top: 370px;
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  ion-card-header{
+    font-family: 'league-spartan.bold', sans-serif;
+    background-color: #004aad;
+    border-radius: 15px;
+  }
+
+  ion-card-title{
+    color: white;
+  }
+
+  ion-card-content{
+    font-family: 'glacial-indifference.regular', sans-serif;
+    margin-top: 7px;
   }
 
 </style>
@@ -34,7 +64,7 @@
   <app-header></app-header>
   <p id="text">LIKES & DISLIKES</p>
 
-  <ion-card>
+  <ion-card id ="likes">
     <ion-card-header>
       <ion-card-title>LIKES</ion-card-title>
     </ion-card-header>
@@ -44,7 +74,7 @@
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
   </ion-card>
-  <ion-card>
+  <ion-card id="dislikes">
     <ion-card-header>
       <ion-card-title>DISLIKES</ion-card-title>
     </ion-card-header>
