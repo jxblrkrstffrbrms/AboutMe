@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-tab2',
@@ -6,6 +6,15 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+
+  public interest: any = [
+    {name: 'KPOP', kind: 0},
+    {name: 'Broken Promises', kind: 1},
+    {name: 'Photography', kind: 0},
+    {name: 'Exercise', kind: 1},
+    {name: 'Photo Editing', kind: 0},
+    {name: 'People with Bad Manners', kind: 1},
+  ]
 
   constructor() {}
 

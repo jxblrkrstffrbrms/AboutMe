@@ -22,9 +22,95 @@
     left: 25px;
   }
 
+  #row1 {
+    z-index: 100;
+    position: absolute;
+    top: 50px;
+    height: 200px;
+    width: 98%;
+  }
+
+  #row2 {
+    z-index: 100;
+    position: absolute;
+    top: 170px;
+    height: 200px;
+    width: 98%;
+  }
+
+  #row3 {
+    z-index: 100;
+    position: absolute;
+    top: 290px;
+    height: 200px;
+    width: 98%;
+  }
+
+  #row4 {
+    z-index: 100;
+    position: absolute;
+    top: 410px;
+    height: 200px;
+    width: 98%;
+  }
+
+  img{
+    padding: 3px;
+    border-radius: 6px;
+  }
+
 </style>
 
 <ion-content [fullscreen]="true">
   <app-header></app-header>
   <p id="text">GALLERY</p>
+
+  <ion-row class="ion-align-items-center" id="row1">
+    <ion-col>
+      <img src="./assets/images/1.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/2.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/3.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-align-items-center" id="row2">
+    <ion-col>
+      <img src="./assets/images/4.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/5.png"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/6.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-align-items-center" id="row3">
+    <ion-col>
+      <img src="./assets/images/7.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/8.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/9.jpg"/>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-align-items-center" id="row4">
+    <ion-col>
+      <img src="./assets/images/10.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/11.jpg"/>
+    </ion-col>
+    <ion-col>
+      <img src="./assets/images/12.jpg"/>
+    </ion-col>
+  </ion-row>
+
 </ion-content>

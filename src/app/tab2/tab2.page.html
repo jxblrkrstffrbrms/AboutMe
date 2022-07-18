@@ -33,6 +33,7 @@
     top: 150px;
     height: 200px;
     border-radius: 15px;
+    width: 95%;
   }
 
   #dislikes {
@@ -41,6 +42,7 @@
     top: 370px;
     height: 200px;
     border-radius: 15px;
+    width: 95%;
   }
 
   ion-card-header{
@@ -55,33 +57,38 @@
 
   ion-card-content{
     font-family: 'glacial-indifference.regular', sans-serif;
+    font-size: 17px;
     margin-top: 7px;
   }
 
 </style>
 
 <ion-content [fullscreen]="true">
+
   <app-header></app-header>
   <p id="text">LIKES & DISLIKES</p>
 
   <ion-card id ="likes">
     <ion-card-header>
-      <ion-card-title>LIKES</ion-card-title>
+      <ion-card-title><ion-icon name="thumbs-up-outline"></ion-icon>  LIKES</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      <ul *ngFor = "let item of interest">
+        <li *ngIf="item.kind === 0">{{item.name}}</li>
+      </ul>
     </ion-card-content>
   </ion-card>
   <ion-card id="dislikes">
     <ion-card-header>
-      <ion-card-title>DISLIKES</ion-card-title>
+      <ion-card-title><ion-icon name="thumbs-down-outline"></ion-icon>  DISLIKES</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      <ul *ngFor = "let item of interest">
+        <li *ngIf="item.kind === 1">{{item.name}}</li>
+      </ul>
     </ion-card-content>
   </ion-card>
+
 </ion-content>
