@@ -1,14 +1,14 @@
 <style>
-  img {
-    padding-bottom: 0px;
-    display: block;
-    position: absolute;
-  }
 
   @font-face {
     font-family: "league-spartan.bold";
     src: url('../assets/fonts/league-spartan.bold.ttf');
     font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "glacial-indifference.regular";
+    src: url('../assets/fonts/glacial-indifference.regular.otf');
   }
 
   #text {
@@ -19,7 +19,67 @@
     font-size: 23px;
     color: white;
     top: 3px;
-    left: 25px;
+    left: 20%;
+  }
+
+  #impt {
+    position: absolute;
+    top: 70px;
+    left: 25%;
+  }
+
+  .photo {
+    width: 180px;
+    border-radius: 90px;
+  }
+
+  #name {
+    position: absolute;
+    top: 245px;
+    left: 15px;
+    font-family: 'league-spartan.bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #004aad;
+  }
+
+  #contact {
+    position: absolute;
+    top: 270px;
+    left: 20%;
+    font-family: 'glacial-indifference.regular', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  @-webkit-keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}@keyframes scale-up-ver-bottom{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);-webkit-transform-origin:0 100%;transform-origin:0 100%}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:0 100%;transform-origin:0 100%}}  
+  #content {
+    -webkit-animation:scale-up-ver-bottom .7s cubic-bezier(.39,.575,.565,1.000) both;animation:scale-up-ver-bottom .7s cubic-bezier(.39,.575,.565,1.000) both;
+    position: absolute;
+    top: 335px;
+    background-color: #5b88c9;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    height:50%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 8%;
+    line-height: 22px;
+  }
+
+  #title{
+    font-family: 'league-spartan.bold', sans-serif;
+    font-size: 17px;
+    color: white;
+  }
+
+  #answer{
+    font-family: 'league-spartan.bold', sans-serif;
+    font-size: 17px;
+    color: black;
+    margin-left: 60%;
   }
 
 </style>
@@ -27,4 +87,17 @@
 <ion-content [fullscreen]="true">
   <app-header></app-header>
   <p id="text">GET TO KNOW ME</p>
+
+  <div id="impt">
+    <img class="photo" src="./assets/images/idpic.jpg"/>
+  </div>
+    <p id="name">JAX BLAIRE KRISTOFFER RAMOS</p>
+    <p id="contact">jaxblairekristofferramos@gmail.com<br>09308462045</p>
+  <div id="content">
+      <p id="title">AGE : <br>{{age}}</p>
+      <p id="title">BIRTHDAY : <br>{{bday}}</p>
+      <p id="title">ADDRESS : <br>{{address}}</p>
+      <p id="title">HEIGHT : <br>{{height}}</p>
+      <p id="title">WEIGHT : <br>{{weight}}</p>
+    </div>
 </ion-content>
