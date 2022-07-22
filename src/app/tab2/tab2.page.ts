@@ -13,7 +13,7 @@ export class Tab2Page {
     {name: 'Photography', kind: 0},
     {name: 'Exercise', kind: 1},
     {name: 'Photo Editing', kind: 0},
-    {name: 'People with Bad Manners', kind: 1},
+    {name: 'Getting Sick', kind: 1},
   ]
 
   constructor() {}
