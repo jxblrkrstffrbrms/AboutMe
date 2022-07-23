@@ -6,6 +6,11 @@
     font-weight: 500;
   }
 
+  @font-face {
+    font-family: "glacial-indifference";
+    src: url('../assets/fonts/glacial-indifference.regular.otf');
+  }
+
   #text {
     position: absolute;
     font-family: 'league-spartan.bold', sans-serif;
@@ -48,6 +53,16 @@
     border-top-right-radius: 50px;
   }
 
+  #note {
+    margin: 5%;
+    font-family: glacial-indifference, sans-serif;
+    font-weight: bold;
+  }
+
+  ion-button {
+    font-family: 'league-spartan.bold', sans-serif;
+  }
+
 </style>
 
 <ion-content [fullscreen]="true">
@@ -64,6 +79,14 @@
       </center>
     </ion-col>
   </ion-row>
+  <p id="note">Hi there! Welcome to my app! I especially made this for you to get to know me better.</p>
+  <p id="note">Are you ready? Click the buttons below!</p>
+  <center>
+  <ion-button shape="round" (click)="interest()" color="light">INTERESTS</ion-button><br>
+  <ion-button shape="round" (click)="gallery()" color="light">GALLERY</ion-button><br>
+  <ion-button shape="round" (click)="profile()" color="light">PROFILE</ion-button>
+</center>
+  <p id="note">Happy browsing!</p>
   </div>
 
 </ion-content>
